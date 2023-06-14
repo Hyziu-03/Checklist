@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    color: #2a2a2a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+    font-size: 64px;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checklist {
+    list-style-type: none;
+}
+
+.list-item {
+    font-size: 48px;
+    line-height: 150%;
+}
+
+input[type=checkbox] {
+    transform: scale(3);
+    vertical-align: middle;
+    appearance: none;
+    outline: 1px solid #2a2a2a;
+    height: 16px;
+    width: 16px;
+    /* keep text aligned with checkboxes */
+    margin: 0 24px 8px 0; 
+}
+
+input[type=checkbox]:checked::before {
+    content: "✔";
+    position: absolute;
+    /* keep checkmarks aligned in the middle of the checkboxes */
+    top: -2px;
+    right: 2px;
+}
+
+.state {
+    aspect-ratio: 1/1;
+    width: 512px;
+}
+
+.theme {
+    border-radius: 50%;
+    border: none;
+    background-color: #2a2a2a;
+    padding: 8px;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.material-symbols-outlined {
+    color: #efefef;
+    font-size: 56px;
+    line-height: 100%;
+}
+
+.copyright {
+    font-size: 24px;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
