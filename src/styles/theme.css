@@ -1,0 +1,14 @@
+body.light {
+  background-color: #efefef;
+  color: #2a2a2a;
+  .material-symbols-outlined {
+    color: #2a2a2a;
+  }
+}
+body.dark {
+  background-color: #2a2a2a;
+  color: #efefef;
+  .material-symbols-outlined {
+    color: #efefef;
+  }
+}
