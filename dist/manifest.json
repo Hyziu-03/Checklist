@@ -44,5 +44,6 @@
     "display": "standalone",
     "scope": ".",
     "theme_color": "#2a2a2a",
-    "description": "A reminder to check email every day"
+    "description": "A reminder to check email every day",
+    "id": "/"
 }

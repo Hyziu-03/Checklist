@@ -1,0 +1,49 @@
+{
+    "name": "Checklist",
+    "short_name": "Checklist",
+    "icons": [
+        {
+            "src": "maskable_icons/maskable_icon_x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "maskable_icons/maskable_icon_x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#2a2a2a",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "#2a2a2a",
+    "description": "A reminder to check email every day",
+    "id": "/"
+}
