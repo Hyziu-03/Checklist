@@ -34,7 +34,9 @@ function loadState() {
   if (wereChecked && doesMatchDate) {
     stateSymbol.src = "images/checkmark.webp";
     for (let i = 0; i < listItems.length; i++) {
-      const checkbox = listItems[i].children[0];
+      const checkbox = listItems[i].children[0].children[0];
+      // listItems[i].children[0] is the label whereas
+      // listItems[i].children[0].children[0] is the checkbox
       checkbox.checked = true;
     }
   }
