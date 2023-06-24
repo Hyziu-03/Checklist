@@ -1,8 +1,50 @@
 ---
-import "../styles/list-item.css";
 import "../styles/media.css";
 const { id, name } = Astro.props;
 ---
+
+<style>
+    .checkbox {
+        transform: scale(3);
+        vertical-align: middle;
+        appearance: none;
+        height: 16px;
+        width: 16px;
+        /* keep text aligned with checkboxes */
+        margin: 0 36px 8px 0;
+        &:hover {
+            cursor: pointer;
+        }
+        &:checked:before {
+            content: "✔";
+            position: absolute;
+            /* keep checkmarks aligned in the middle of the checkboxes */
+            top: -2px;
+            right: 2px;
+        }
+    }
+    .list-item {
+        font-size: 48px;
+        line-height: 150%;
+    }
+    /* themes */
+    body.light {
+        .checkbox {
+            outline: 1px solid #2a2a2a;
+            &:checked::before {
+                color: #2a2a2a;
+            }
+        }
+    }
+    body.dark {
+        .checkbox {
+            outline: 1px solid #efefef;
+            &:checked::before {
+                color: #efefef;
+            }
+        }
+    }
+</style>
 
 <li class="list-item">
     <label for={id}>
