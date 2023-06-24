@@ -1,29 +1,56 @@
+"use strict";
 const theme = document.querySelector("#theme");
 toggleTheme();
 loadTheme();
 saveTheme();
 function toggleTheme() {
-  theme.addEventListener("click", function () {
-    document.body.className === "light" ? enableDarkMode() : enableLightMode();
-  });
+  try {
+    theme.addEventListener("click", function () {
+      document.body.className === "light"
+        ? enableDarkMode()
+        : enableLightMode();
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 function enableDarkMode() {
-  document.body.className = "dark";
-  theme.innerHTML = "light_mode";
+  try {
+    document.body.className = "dark";
+    theme.innerHTML = "light_mode";
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 function enableLightMode() {
-  document.body.className = "light";
-  theme.innerHTML = "dark_mode";
+  try {
+    document.body.className = "light";
+    theme.innerHTML = "dark_mode";
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 function getCurrentTheme() {
-  return document.body.className;
+  try {
+    return document.body.className;
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 function saveTheme() {
-  window.addEventListener("beforeunload", function () {
-    localStorage.setItem("theme", getCurrentTheme());
-  });
+  try {
+    window.addEventListener("beforeunload", function () {
+      localStorage.setItem("theme", getCurrentTheme());
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 function loadTheme() {
-  const theme = localStorage.getItem("theme");
-  theme === "dark" ? enableDarkMode() : enableLightMode();
+  try {
+    const theme = localStorage.getItem("theme");
+    theme === "dark" ? enableDarkMode() : enableLightMode();
+  } catch (error) {
+    throw new Error(error);
+  }
 }
