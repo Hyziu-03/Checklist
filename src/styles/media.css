@@ -2,15 +2,15 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     height: 100vh;
   }
   .heading {
     font-size: 48px;
+    margin: 64px 48px 0 48px;
   }
   .content {
     justify-content: space-evenly;
-    margin: 0 64px;
+    margin: 64px;
   }
   .state {
     width: 320px;
@@ -25,20 +25,17 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 460px) {
+  .list-item {
+    font-size: 24px !important;
+  }
+}
 @media screen and (max-width: 425px) {
   .heading {
     font-size: 36px;
   }
-  .list-item {
-    font-size: 30px;
-  }
   .theme {
     top: 16px;
     right: 16px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .list-item {
-    font-size: 24px;
   }
 }
